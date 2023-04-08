@@ -1,0 +1,80 @@
+@use "../../../sass/mixin" as mixin;
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  &__title {
+    margin-bottom: 32px;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.165em;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  &__links {
+    a {
+      margin-bottom: 12px;
+      display: block;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 167.5%;
+      color: #7e7e7e;
+    }
+  }
+  &__start {
+    form {
+      max-width: 460px;
+      position: relative;
+    }
+    input {
+      width: 100%;
+      padding-bottom: 16px;
+      border: none;
+      border-bottom: 1px solid #c4c4c4;
+    }
+    button {
+      position: absolute;
+      right: 0;
+      background-color: transparent;
+      border: none;
+    }
+  }
+  &__social {
+    margin-top: 28px;
+    @include mixin.df-ai;
+    a {
+      @include mixin.df-ai;
+      margin-right: 18px;
+    }
+  }
+  &__end {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    display: grid;
+    grid-template-columns: auto;
+    &__start {
+      margin-bottom: 42px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    &__end {
+      grid-template-columns: auto;
+      & > div:first-child {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}

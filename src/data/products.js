@@ -23,4 +23,10 @@ export const products = [
     rating: 5,
     price: 34,
   },
+  {
+    img: "/products/product-2.png",
+    name: "Product Name",
+    rating: 5,
+    price: 34,
+  },
 ];

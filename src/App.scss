@@ -64,6 +64,10 @@
   src: url("./assets/fonts/arca majora/ArcaMajora3-Heavy.otf");
 }
 
+@font-face {
+  font-family: "Work Sans";
+  src: url("./assets/fonts/work sans/WorkSans-Regular.ttf");
+}
 
 .container {
   // 1440-2*40+2*16=1360+32=1392
@@ -79,4 +83,8 @@ a {
 
 button {
   cursor: pointer;
+}
+
+input:focus {
+  outline: none;
 }
