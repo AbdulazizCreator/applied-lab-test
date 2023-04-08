@@ -54,6 +54,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="footer-bottom">
+        <p>©2020 Again Faster. All Rights Reserved</p>
+      </div>
     </footer>
   );
 };
